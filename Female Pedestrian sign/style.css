@@ -1,0 +1,98 @@
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: rgba(23, 56, 120, 0.65);
+  font-size: 3rem;
+}
+.container {
+  margin: 150px 400px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.head,
+.left_arm,
+.torse,
+.right_arm,
+.left_leg,
+.right_leg {
+  background-color: rgb(23, 56, 165);
+}
+
+.head {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 0 auto;
+  transition: all 1s ease-in-out;
+}
+
+.robot:hover .head {
+  transform: translateY(-15px) rotate(360deg);
+}
+
+.robot:hover .left_eye,
+.robot:hover .right_eye {
+  background-color: red;
+}
+
+.eyes {
+  display: flex;
+}
+
+.left_eye,
+.right_eye {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: rgb(230, 170, 100);
+}
+
+.left_eye {
+  position: relative;
+  top: 40px;
+  left: 40px;
+}
+
+.right_eye {
+  position: relative;
+  top: 40px;
+  left: 80px;
+}
+
+.upper_body {
+  display: flex;
+}
+.torse {
+  width: 175px;
+  height: 275px;
+  border-radius: 25px 25px 0 0;
+}
+
+.left_arm,
+.right_arm {
+  height: 255px;
+  width: 50px;
+  border-radius: 10px 10px 0 0;
+}
+
+.left_arm {
+  margin-right: 10px;
+}
+
+.right_arm {
+  margin-left: 10px;
+}
+
+.lower_body {
+  display: flex;
+  justify-content: space-around;
+}
+
+.left_leg,
+.right_leg {
+  width: 70px;
+  height: 300px;
+}
